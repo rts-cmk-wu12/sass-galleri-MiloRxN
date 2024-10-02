@@ -1,0 +1,70 @@
+// (layout relateret styling)
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+
+.main__gallery{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // padding: 1rem;
+    // margin-block: 1rem;
+    // gap: 1rem;
+
+    // &__img-container {
+    //     width: 100%;
+
+    //     .gallery__image {
+    //         max-width: 100%;
+    //     }
+    //   }
+}
+@media (min-width: 500px){
+    .main__gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explorer{
+        margin-left: 1rem;
+        &__togglemenu{
+            display: none;
+        }
+
+        &__list{
+            display: flex;
+        }
+    }
+}
+@media (min-width: 800px){
+    .main__gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .explorer{
+        margin-left: 3rem;
+    }
+}
+@media (min-width: 1050px){
+    .main__gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .explorer{
+        margin-left: 4rem;
+    }
+}
+
+@media (min-width: 1350px){
+    .main__gallery{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .explorer{
+        margin-left: 5rem;
+    }
+}
