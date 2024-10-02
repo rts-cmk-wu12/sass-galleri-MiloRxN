@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <input type="text" class="header__search-input" placeholder="Search...">
+    </header>
+    <div class="wrapper">
+        <section class="explorer">
+            <h1 class="explorer__title">Explorer</h1>
+            <nav class="explorer__navigation">
+                <button id="toggle-button" class="explorer__togglemenu"><img class="explorer__togglemenu-icon"
+                        src="svgs/menu-svgrepo-com.svg" alt="Toggle Navigation"></button>
+                <ul id="explorer__list" class="explorer__list explorer__list--hidden">
+                    <li class="explorer__list-item" data-category="lifestyle">Lifestyle</li>
+                    <li class="explorer__list-item" data-category="food">Food</li>
+                    <li class="explorer__list-item" data-category="home">Home</li>
+                    <li class="explorer__list-item" data-category="travel">Travel</li>
+                    <li id="list-item--more" class="explorer__list-item">More <i class="fa-solid fa-caret-down"></i>
+                        <ul id="explorer-sublist" class="explorer__sublist explorer__sublist--hidden">
+                            <li class="explorer__list-item" data-category="sport">Sport</li>
+                            <li class="explorer__list-item" data-category="entertainment">Entertainment</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <main class="main">
+            <div class="main__gallery">
+                <img src="images/colourbox/entertainment/COLOURBOX3866375.jpg" alt="entertainment">
+                <img src="images/colourbox/entertainment/COLOURBOX4533941.jpg" alt="entertainment">
+                <img src="images/colourbox/entertainment/COLOURBOX6649143.jpg" alt="entertainment">
+                <img src="images/colourbox/food/COLOURBOX63790354.jpg" alt="food">
+                <img src="images/colourbox/food/COLOURBOX63791043.jpg" alt="food">
+                <img src="images/colourbox/food/COLOURBOX63816727.jpg" alt="food">
+                <img src="images/colourbox/home/COLOURBOX51644518.jpg" alt="home">
+                <img src="images/colourbox/home/COLOURBOX57295260.jpg" alt="home">
+                <img src="images/colourbox/home/COLOURBOX58660377.jpg" alt="home">
+                <img src="images/colourbox/lifestyle/COLOURBOX24505775.jpg" alt="lifestyle">
+                <img src="images/colourbox/lifestyle/COLOURBOX43808588.jpg" alt="lifestyle">
+                <img src="images/colourbox/lifestyle/COLOURBOX48672244.jpg" alt="lifestyle">
+                <img src="images/colourbox/sport/COLOURBOX56386041.jpg" alt="sport">
+                <img src="images/colourbox/sport/COLOURBOX56434075.jpg" alt="sport">
+                <img src="images/colourbox/sport/COLOURBOX56443587.jpg" alt="sport">
+                <img src="images/colourbox/travel/COLOURBOX60526831.jpg" alt="travel">
+                <img src="images/colourbox/travel/COLOURBOX60530625.jpg" alt="travel">
+                <img src="images/colourbox/travel/COLOURBOX60544860.jpg" alt="travel">
+            </div>
+        </main>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span id="close-modal" class="close-modal">&times;</span>
+            <img id="modal-image" class="modal__content-image" src="images/colourbox/entertainment/COLOURBOX3866375.jpg" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__social-media">
+            <a href="#" class="footer__link"><img class="footer__social-media-icon"
+                    src="svgs/facebook-176-svgrepo-com.svg" alt="Facebook"></a>
+            <a href="#" class="footer__link"><img class="footer__social-media-icon"
+                    src="svgs/twitter-154-svgrepo-com.svg" alt="Twitter"></a>
+            <a href="#" class="footer__link"><img class="footer__social-media-icon" src="svgs/instagram-svgrepo-com.svg"
+                    alt="Instagram"></a>
+            <a href="#" class="footer__link"><img class="footer__social-media-icon"
+                    src="svgs/google-plus-svgrepo-com.svg" alt="Google plus"></a>
+            <a href="#" class="footer__link"><img class="footer__social-media-icon" src="svgs/behance-svgrepo-com.svg"
+                    alt="Behance"></a>
+            <a href="#" class="footer__link"><img class="footer__social-media-icon" src="svgs/dribble-svgrepo-com.svg"
+                    alt="Dribbble"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
